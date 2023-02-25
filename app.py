@@ -7,7 +7,7 @@ from matplotlib.patches import Rectangle
 from keras.models import load_model
 import cv2
 
-NeuralNetwork = load_model('PneuClass(90%).h5')
+NeuralNetwork = tf.keras.models.load_model('PneuClass(90%).h5')
 img_size = 150
   
 
