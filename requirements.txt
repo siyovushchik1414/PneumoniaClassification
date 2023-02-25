@@ -1,6 +1,7 @@
-streamlit
-matplotlib
-pandas
-opencv-python
-numpy
-tensorflow
+streamlit == 1.19.0
+matplotlib == 3.7.0
+pandas == 1.5.3
+opencv-python == 4.7.0.68
+numpy == 1.24.2
+tensorflow = 2.8.0
+keras == 2.8.0
