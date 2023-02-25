@@ -2,10 +2,10 @@ import streamlit as st
 from PIL import Image
 import matplotlib.pyplot as plt
 import pandas as pd
-import cv2
 import numpy as np
 from matplotlib.patches import Rectangle
 from keras.models import load_model
+import cv2
 
 NeuralNetwork = load_model('D:\Desktop\PneumoniaClassification/PneuClass(90%).h5')
 img_size = 150
