@@ -32,7 +32,8 @@ def predict(name):
         SamplePhotoXTrain = np.array(SamplePhotoXTrain) / 255
         SamplePhotoXTrain = SamplePhotoXTrain.reshape(-1, img_size, img_size, 1)
         Prediction = NeuralNetwork.predict(SamplePhotoXTrain)
-        ANS = str("%.2f" % (1.0 - Prediction[0][0]) * 100)        
+#         ANS = str("%.2f" % (1.0 - Prediction[0][0]) * 100)        
+        ANS = str(round(1.0 - Prediction[0][0], 3) * 100)
         st.header('Обнаружение пневмонии: ' + ANS + '%')
 
         
